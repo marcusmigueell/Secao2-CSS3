@@ -4,14 +4,77 @@
 
 <head>
 
-    <title>Documents</title>
+    <title>Sobrepondo elementos</title>
     <meta charset="UTF-8">
+
+    <style type="text/css">
+
+        body {
+            margin: 0px;
+        }
+        
+        #cabecalho {
+            border: 1px solid red;
+            width: 100%;
+            text-align: center;
+        }
+
+        .conteudo1 {
+            border: 1px solid red;
+            background: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .conteudo2 {
+            border: 1px solid red;
+            background: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 170px;
+            left: 80px;
+            z-index: 1;
+        }
+
+        .conteudo3 {
+            border: 1px solid red;
+            background: yellow;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 250px;
+            left: 160px;
+            z-index: 0;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-    
+    <div id="cabecalho">
+        <h1>Sobrepondo Elementos</h1>
+    </div>
+
+    <div>
+
+        <div class="conteudo1">
+            Conteudo 1
+        </div>
+
+        <div class="conteudo2">
+            Conteudo 2
+        </div>
+
+        <div class="conteudo3">
+            Conteudo 3
+        </div>
+
+    </div>
 
 </body>
 
