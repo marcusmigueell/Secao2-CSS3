@@ -24,6 +24,41 @@ body {
     padding: 10px;
 }
 
+#area-principal {
+    width: 920px;           /* Resolução ideal para o mercado que roda 1024 */
+    margin: 0px auto;       /* Para centralizar usaremos o margin - auto = automatico para os lados */
+
+}
+
+#area-postagens, #area-lateral {
+    background: #f7b600;
+}
+
+#area-postagens {
+    width: 660px;
+    float: left;           /* Para deixar essa area de postaem a esquerda da area principal */
+
+    /* Quando declaramos o width das areas postagens e lateral a soma deles deu 900px e o width da area principal é de 920 pix quando colocamos os floats tanto na área-postagens quanto área-lateral ficará um estapaçamento entre eles de extamente 20px que é a diferença entrea as áreas */
+}
+
+#area-lateral {
+    width: 240px;
+    float: right;           /* Para deixar essa area de postaem a direita da area principal */
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;   /* Para separar o leia mais do rodape */
+    background: white;
+}
+
+#rodape {
+    clear: both;
+    padding: 15px;
+    background: #CCC;
+    text-align: center;
+}
+
 /*
 **** Formatação do Menu ****
 */
