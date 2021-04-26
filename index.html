@@ -4,14 +4,97 @@
 
 <head>
 
-    <title>Documents</title>
+    <title>Placements (static, relative, absolute and fixed)</title>
     <meta charset="UTF-8">
+
+    <style>
+
+        body {
+            background: #007fc7;
+        }
+
+        #container {
+            background: #FFF;
+            width: 800px;
+            margin: 10px auto; /*auto é para centralizar usando as laterais*/
+            padding: 10px;
+            position: relative;
+        }
+
+        h1 {
+            position: static;
+        }
+
+        p {
+            width: 300px;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            top: 20px; /* ou bottom ou pode ser numeros negativos que será o inverso de top assim sendo o bottom */
+            left: 80px; /* ou right ou pode ser numeros negativos que será o inverso de left assim sendo o right*/
+        }
+
+        .absolute {
+            border: 1px solid red;
+            background: #f2f2f2;
+            position: absolute;
+            top: 80px;
+            right: 80px;
+        }
+
+        .fixed {
+            border: 1px solid red;
+            background: #f2f2f2;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            margin: 0px;
+        }
+
+        /*
+            position do tipo static é o posicionamento padrão das páginas no caso primeiro vem o h1 e em seguida os paragráfos.
+
+            position do tipo relativo temos que usar propriedades de deslocamento para movimentar o paragrafo, que são top, right, bottom e left, que será o exemplo da classe relative
+
+            position do tipo absolute o elemento que definimos como absoluto ele sai do fluxo normal do documento e não afeta os outros elementos da página. E também poderemos usar as propriedades de deslocamento, que são:  top, right, bottom e left. Para que ele seja usado o container pai, o position tem que ser diferente de estático e por padrão todos são estáticos. Para o exemplo no id container declarei position relative, para vermos a diferença
+
+            position do tipo fixed declarei as propriedades top e riht com 0pix e aumentei a quantidade de paragráfo, para aparecer a barra de rolagem e como ele está fixo, ao descer a barra de rolagem o paragráfo que declarei como fixed acompanhará a barra de rolagem da página
+
+        */
+
+    </style>
 
 </head>
 
 <body>
 
-    
+    <div id="container">
+        
+        <h1>Posicionamentos - Placements</h1>
+
+        <p class="absolute">Absolute Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p class="relative">Relativo Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p class="fixed">Fixo Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit soluta saepe vel alias suscipit amet molestias enim, repudiandae animi culpa pariatur velit, blanditiis harum earum. Molestiae maiores dolorem optio voluptates.</p>
+
+    </div>
 
 </body>
 
