@@ -7,11 +7,54 @@
     <title>Documents</title>
     <meta charset="UTF-8">
 
+    <style type="text/css">
+        .conteudo {
+            background: blue;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: right;     /*left e right*/
+        }
+
+        .clear {
+            /*limpar fluxo flutuante */
+            clear: both;
+            /* left, right, both (ambos, pode ser right ou left) ou none - nesse exemplo coloquei left, pois é o mesmo de usado em float em .conteudo*/
+        }
+
+        #principal {
+            background: green;
+            border: 5px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    
+    <div id="principal">
+
+        <div class="conteudo">
+            Conteúdo 1
+        </div>
+
+        <div class="conteudo">
+            Conteúdo 2
+        </div>
+
+        <div class="conteudo">
+            Conteúdo 3
+        </div>
+
+        <div class="clear">
+
+        </div>
+
+    </div>
 
 </body>
 
