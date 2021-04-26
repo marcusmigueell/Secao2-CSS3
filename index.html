@@ -4,113 +4,52 @@
 
 <head>
 
-    <title>Documents</title>
+    <title>Elementos inline, block e inline-block</title>
     <meta charset="UTF-8">
 
     <style type="text/css">
-        
-        body {
-            background: #f4f4f4;
+        .borda {
+            border: 1px solid red;
         }
 
-        #principal {
-            width: 920px;
+        .borda-inline-block {
+            border: 1px solid red;
+            display: inline-block;
         }
-
-        .noticia {
-            background: #e5e5e5;
-            padding: 5px;
-            width: 280px;
-            margin: 7px;
-            float: left;
-            /*left e right*/
-        }
-
-        .clear {
-            /*limpar fluxo flutuante */
-            clear: both;
-            /* left, right, both (ambos, pode ser right ou left) ou none - nesse exemplo coloquei left, pois é o mesmo de usado em float em .conteudo*/
-        }
-
-        .imagem {
-            background: white;
-            width: 265px;
-            padding: 5px;
-            float: left;
-            margin: 15px;
-        }
-
     </style>
 
 </head>
 
 <body>
 
-    <div id="principal"> <!-- inicio principal-->
+    <h1 class="borda">Bloco 1</h1>
+    <!--Exemplos de blocos h1, <p> e <div>, esses são todos blocos-->
+    <h1 class="borda">Bloco 2</h1>
 
-        <div> <!-- inicio noticia -->
+    <br>
 
-            <div class="noticia">
-                <h2>Lorem ipsum dolor sit amet 1</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia, maxime accusamus tenetur
-                    laboriosam, quasi soluta iusto explicabo saepe dolor quia.
-                </p>
-                <a href="">Veja mais</a>
-            </div>
+    <hr>
 
-            <div class="noticia">
-                <h2>Lorem ipsum dolor sit amet 2</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia, maxime accusamus tenetur
-                    laboriosam, quasi soluta iusto explicabo saepe dolor quia.
-                </p>
-                <a href="">Veja mais</a>
-            </div>
+    <br>
 
-            <div class="noticia">
-                <h2>Lorem ipsum dolor sit amet 3</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia, maxime accusamus tenetur
-                    laboriosam, quasi soluta iusto explicabo saepe dolor quia.
-                </p>
-                <a href="">Veja mais</a>
-            </div>
+    <span class="borda">inline 1 asdfg çlkjh</span>
+    <!--Exemplo do inline conteúdos ficam lado a lado-->
+    <span class="borda">inline 2</span>
+    <!--e o tamanho do bloco é efinido pelo seu conteudo individual-->
 
-        </div> <!-- fim noticia -->
+    <br><br>
 
-        <div class="clear"></div>
+    <hr>
 
-        <div> <!-- inicio fotos -->
+    <br>
 
-            <div class="imagem">
-                <img src="imagens/imagem1.png">
-                <p>Resumo</p>
-            </div>
+    <span class="borda-inline-block">
+        <!--usando o display inline block o inline cai automaticamente para proxima linha se ele não couber na linha anterior, isso está sendo demonstrado no exemplo a seguir. Todos, como inline, block e inline-block podem ser usados elementos como o display, podemos fazer esses teste apenas trocando os valores do display na classe borda-inline-block-->
+        inline 1
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repudiandae ratione vel accusantium eius vero, error incidunt commodi consequuntur odit quaerat dolorum, eveniet id, qui iusto. Enim laborum vel magnam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum voluptatibus reprehenderit, repellendus nesciunt in obcaecati iusto quas officiis voluptate rerum dolorum voluptatum alias velit maxime ducimus assumenda ad cupiditate amet.
+    </span>
+    <span class="borda-inline-block">inline 2</span>
 
-            <div class="imagem">
-                <img src="imagens/imagem2.png">
-                <p>Resumo</p>
-            </div>
-
-            <div class="imagem">
-                <img src="imagens/imagem3.png">
-                <p>Resumo</p>
-            </div>
-
-            <div class="imagem">
-                <img src="imagens/imagem4.png">
-                <p>Resumo</p>
-            </div>
-
-            <div class="imagem">
-                <img src="imagens/imagem5.png">
-                <p>Resumo</p>
-            </div>
-
-        </div> <!-- fim fotos -->
-
-    </div> <!-- fim principal-->
 
 </body>
 
