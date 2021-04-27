@@ -27,11 +27,7 @@ body {
 #area-principal {
     width: 920px;           /* Resolução ideal para o mercado que roda 1024 */
     margin: 0px auto;       /* Para centralizar usaremos o margin - auto = automatico para os lados */
-
-}
-
-#area-postagens, #area-lateral {
-    background: #f7b600;
+    padding: 15px;          /* Para dar espaço entre a area do logo e as areas de postagens e lateral */
 }
 
 #area-postagens {
@@ -52,6 +48,18 @@ body {
     background: white;
 }
 
+.conteudo-lateral {
+    background: #FFF;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #CCC;
+}
+
 #rodape {
     clear: both;
     padding: 15px;
@@ -65,16 +73,25 @@ body {
 
 a {
     text-decoration: none;   /*Tirar o underline*/
-    padding: 8px 12px;       /*Aumentar os espaçamento entre os links*/
 }
 
 a:link, a:visited {
-    color: #FFF; 
+    color: #f7b600; 
 } 
 
 a:hover {
+    text-decoration: underline;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+    color: #FFF; 
+    padding: 8px 12px;       /* Aumentar os espaçamento entre os links*/
+} 
+
+#area-cabecalho a:hover {
     color: #f7b600;
-    background: white;
+    background: #FFF;
+    text-decoration: none;
 }
 
 /*
@@ -84,6 +101,24 @@ a:hover {
 h1 {
     color: #4e4e4e;
     font-size: 2.5em;
+}
+
+h2 {
+    color: #f7b600;
+}
+
+h3 {
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
 }
 
 .branco {
